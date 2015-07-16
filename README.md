@@ -74,7 +74,7 @@ into this
 ![stripped](https://cloud.githubusercontent.com/assets/487758/6201672/27c76794-b4f2-11e4-93d7-96a576285604.png)
 
 #### count(field_name, name='', description='')
-Returns a function that can be used to count many-to-many relationship on a Django admin list view.
+Returns a function that can be used to count one-to-many and many-to-many relationship on a Django admin list view.
 If no name is given, count_*field_name* is used.
 
 **Note** *name* must be a string (not unicode). For translations, use *description* instead
