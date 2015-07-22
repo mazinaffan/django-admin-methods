@@ -15,9 +15,9 @@ The *actions* module provides methods to build [admin actions](https://docs.djan
 
 #### true_false(field_name, true_name='', false_name='', true_description='', false_description='')
 
-Returns two functions, one to set the model's *field_name* as true, one as false.
-*true_name* is used as the function name (make sure it is unique for this AdminModel)
-If *true_description* is given it will be used as the *short_description* value on the "true" function (which will be shown in the admin actions list).
+Returns two functions, one to set the model's *field_name* as true, one as false.  
+*true_name* is used as the function name (make sure it is unique for this AdminModel)  
+If *true_description* is given it will be used as the *short_description* value on the "true" function (which will be shown in the admin actions list).  
 If no name is given, defaults to *"Set as [field_name]"* and *"Set as non [field_name]"
 
 **Note** *true_name* must be a string (not unicode). For translations, use *true_description* instead
@@ -38,8 +38,8 @@ Results in the actions below which would set the selected items' *published* val
 ![admin actions](https://cloud.githubusercontent.com/assets/487758/6201646/5da29110-b4f0-11e4-9b28-645906e4d2e0.png)
 
 #### toggle(field_name, name='', description='')
-Returns a function which sets the model's *field_name* as the opposite of its current value for each selected items.
-If no name is given, defaults to *"Toggle [field_name]"*
+Returns a function which sets the model's *field_name* as the opposite of its current value for each selected items.  
+If no name is given, defaults to *"Toggle [field_name]"*  
 If *description* is given it will be used as the *short_description* value on the function (which will be shown in the admin actions list). Otherwise *name* is used
 
 **Note** *name* must be a string (not unicode). For translations, use *description* instead
